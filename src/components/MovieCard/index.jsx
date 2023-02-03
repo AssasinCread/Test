@@ -5,13 +5,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import POSTER from '../MovieCard'
 const MovieCard = (props) => {  
         return (
           <Card sx={{ maxWidth: 345, }}>
             <CardMedia
               sx={{ height: 140 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="green iguana"
+              image={`${POSTER}${props.poster_path}`}
+              title="Movies"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
