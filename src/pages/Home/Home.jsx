@@ -1,5 +1,5 @@
 import React from "react";
-import { ApiKey, } from "../../api/const";
+import { ApiKey } from "../../api/const";
 import MovieCard from "../../components/MovieCard";
 
 
@@ -7,6 +7,7 @@ import MovieCard from "../../components/MovieCard";
 class Home extends React.Component{
     state = {
         list: [],
+        
     }
    
     componentDidMount(){
